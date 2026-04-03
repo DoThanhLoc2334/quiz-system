@@ -5,7 +5,7 @@
 int main()
 {
     int x = 0;
-    char ch1[100],ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11;
+    char ch1[100],ch2,ch3,ch4,ch5,ch6,ch7,ch8,ch9,ch10,ch11,ch12,ch13;
     printf("Enter Your Name: ");
     scanf("%[^\n]", ch1);
     getchar();
@@ -172,6 +172,43 @@ int main()
         getchar();
     }
 
+
+    system("cls");
+printf("What is called as ' THE LAND OF FIRE AND ICE'?\n");
+printf("a.Iceland\nb.Greenland\nc.Finland");
+printf("\nEnter your answer: ");
+scanf("%c", &ch12);
+getchar();
+if(ch12=='a')
+{
+    x = x + 10;
+    printf("Good Job. Your score is %d", x);
+    getchar();
+}
+else
+{
+    printf("Sorry wrong answer.");
+    getchar();
+}
+
+system("cls");
+printf("What is called as ' THE PEARL OF THE ORIENT'?\n");
+printf("a.Vietnam\nb.Philippines\nc.Thailand");
+printf("\nEnter your answer: ");
+scanf("%c", &ch13);
+getchar();
+if(ch13=='b')
+{
+    x = x + 10;
+    printf("Good Job. Your score is %d", x);
+    getchar();
+}
+else
+{
+    printf("Sorry wrong answer.");
+    getchar();
+}
+    
     system("cls");
     printf("What is called as ' THE DARK CONTIENENT'?\n");
     printf("a.Asia\nb.Australia\nc.Africa");
