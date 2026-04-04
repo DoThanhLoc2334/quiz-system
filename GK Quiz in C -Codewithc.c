@@ -1,4 +1,4 @@
-#include<stdio.h>
+#incl ude<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 //CODEWITHC.COM
