@@ -2,6 +2,25 @@
 #include<stdlib.h>
 #include<conio.h>
 //CODEWITHC.COM
+void showResult(int score) {
+    printf("\n===== FINAL RESULT =====\n");
+
+    if(score == 100) {
+        printf("Perfect score! You may have played before.\n");
+    }
+    else if(score >= 90) {
+        printf("Excellent! Your score is %d\n", score);
+    }
+    else if(score >= 80) {
+        printf("Good job! Your score is %d\n", score);
+    }
+    else if(score >= 50) {
+        printf("Average performance. Your score is %d\n", score);
+    }
+    else {
+        printf("Poor result. Try again! Your score is %d\n", score);
+    }
+}
 int main()
 {
     int x = 0;
@@ -227,21 +246,7 @@ else
         getchar();
     }
     system("cls");
-    if(x == 100) {
-        printf("No cheating...... You have done this earlier also.");
-    }
-    if(x == 90){
-        printf("You are extremely intelligent. Your Score is 90");
-    }
-    if(x == 80){
-        printf("You are intelligent. Your Score is 80");
-    }
-    if(50 == x || x == 70 || x == 60) {
-        printf("You are average. Your Score is %d. Better luck next time\n", x);
-    }
-    else if(x <= 40){
-        printf("No use........ Not even 5 questions right");
-    }
+  showResult(x);
 
     return 0;
 
